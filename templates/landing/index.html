@@ -1,0 +1,467 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+    <!-- BEGIN HEAD -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>Eshat Airlines</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="" name="description"/>
+        <meta content="" name="author"/>
+
+        <!-- GLOBAL MANDATORY STYLES -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet" type="text/css"/>
+        <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet" type="text/css"/>
+
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+        <link href="{% static  'css/animate.css'%}" rel="stylesheet">
+        <link href="{% static 'vendor/swiper/css/swiper.min.css'%}" rel="stylesheet" type="text/css"/>
+        <link href="{% static 'vendor/magnific-popup/magnific-popup.css'%}" rel="stylesheet" type="text/css"/>
+
+        <!-- THEME STYLES -->
+        <link href="{% static 'css/layout.min.css'%}" rel="stylesheet" type="text/css"/>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico"/>
+    </head>
+    <!-- END HEAD -->
+
+    <!-- BODY -->
+    <body id="body" data-spy="scroll" data-target=".header">
+
+        <!--========== HEADER ==========-->
+        <header class="header navbar-fixed-top">
+            <!-- Navbar -->
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="menu-container js_nav-item">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a class="logo-wrap" href="#body">
+                               <!-- <img class="logo-img logo-img-main" src="{% static 'img/logo.png' %}" alt="Asentus Logo">
+                                <img class="logo-img logo-img-active" src="{% static 'img/logo-dark.png' %}" alt="Asentus Logo">-->
+                           <i class="logo-img logo-img-main fab fa-avianex" style="font-size: 35px; color:white">Eskhat Airlines</i>
+                           <i class="logo-img logo-img-active fab fa-avianex" style="font-size: 35px; color:#0b0b0b;">Eskhat Airlines</i>
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <ul class="nav navbar-nav navbar-nav-right">
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Басты бет</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#products">Ақпарат</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#service">Қызметтер</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#pricing">Баға</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Байланыс</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Navbar Collapse -->
+                </div>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--========== END HEADER ==========-->
+
+        <!--========== SLIDER ==========-->
+        <div class="promo-block">
+            <div class="container">
+                <div class="margin-b-40">
+                    <h1 class="promo-block-title">Ойланбай ұш.</h1>
+                    <p class="promo-block-text">Ары қарай қарамай-ақ қойыңыз. Сіз келіп қойдыңыз ...</p>
+                </div>
+                <a class="js_popup-youtube btn-theme btn-theme-md btn-white-bg text-uppercase" href="https://www.youtube.com/watch?v=0qisGSwZym4" title="Intro Video"><i class="btn-icon icon-control-play"></i> Бейнеролик көру</a>
+            </div>
+        </div>
+        <!--========== SLIDER ==========-->
+
+        <!--========== PAGE LAYOUT ==========-->
+        <!-- Products -->
+        <div id="products">
+            <div class="container content-lg">
+                <div class="row text-center margin-b-40">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h2>Соңғы жаңалықтар</h2>
+                        <p>Осы аптадағы хабарландырулар мен жаңалықтар</p>
+                    </div>
+                </div>
+                <!--// end row -->
+
+                <div class="row">
+                    <!-- Latest Products -->
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="margin-b-20">
+                            <img class="img-responsive wow fadeIn" src="{% static 'img/970x647/01.jpg'%}" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".1s">
+                        </div>
+
+
+                        <h4><a href="#">ОНЛАЙН ТІРКЕЛУ</a> <span class="text-uppercase margin-l-20">Ақпарат</span></h4>
+                        <p>Мобильді отырғызу талоны. Енді cіз мобильді құрылғыны
+                        пайдаланып, біздің Eshat Airline қосымшамыз немесе esair.com арқылы тіркеуден өткен кезде мобильді отырғызу талонын ала аласыз.</p>
+                        <a class="link" href="#">Толығырақ</a>
+                    </div>
+                    <!-- End Latest Products -->
+
+                    <!-- Latest Products -->
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="margin-b-20">
+                            <img class="img-responsive wow fadeIn" src="{% static 'img/970x647/02.jpg'%}" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".2s">
+                        </div>
+                        <h4><a href="#">ҰШАҚ БОРТЫНДА ҚЫЗМЕТ</a> <span class="text-uppercase margin-l-20">Қызмет</span></h4>
+                        <p>Сапарыңызға арналған электронды баспа
+Сіздер үшін жақсы жаңалықтарымыз бар. 2018 жылдың 8 мамырына дейін сынақтама тәртібінде жұмыс істейтін қызметті қолданып үлгеріңіз. Барлық тіркелген жолаушылар әртүрлі тілдегі электронды баспаны өз құрылғыларына жүктей алады.
+
+Сіздің ой-пікіріңіз біз үшін өте маңызды, қызмет туралы пікір қалдыруды ұмытпаңыз.</p>
+                        <a class="link" href="#">Толығырақ</a>
+                    </div>
+                    <!-- End Latest Products -->
+
+                    <!-- Latest Products -->
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="margin-b-20">
+                            <img class="img-responsive wow fadeIn" src="{% static 'img/970x647/03.jpg'%}" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".3s">
+                        </div>
+                        <h4><a href="#">КӨП БАҒЫТТЫ БРОНДАУ</a> <span class="text-uppercase margin-l-20">Брондау</span></h4>
+                        <p>Көп бағытты саяхатты оңай брондаңыз
+Енді сіз көп бағытты саяхат брондау үшін мына іздеу құралын пайдалансаңыз болады. Бұл брондау формасы арқылы сіз 4 ұшу сегментіне дейін брондай аласыз. Сондай-ақ, сіз қаласаңыз жолда қалаған жеріңізде аялдауыңызға немесе саяхатыңызға жер үсті бөлігін қосуыңызға болады</p>
+                        <a class="link" href="#">Толығырақ</a>
+                    </div>
+                    <!-- End Latest Products -->
+                </div>
+                <!--// end row -->
+            </div>
+
+            <div class="container-full-width">
+                <div class="row row-space-2">
+                    <div class="col-sm-6 sm-margin-b-4">
+                        <img class="img-responsive" src="{% static  'img/970x647/01.jpg'%}" alt="Image">
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-responsive" src="{% static 'img/970x647/03.jpg'%}" alt="Image">
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+        <!-- End Products -->
+
+        <!-- Service -->
+        <div id="service">
+            <div class="bg-color-sky-light" data-auto-height="true">
+                <div class="content-lg container">
+                    <div class="row row-space-2 margin-b-4">
+                        <div class="col-sm-4 sm-margin-b-4">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-chemistry"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>Hospitable (Қонақжайлылық)</h3>
+                                    <p class="margin-b-5">Біз әрбір адамды, ол клиент болсын, әріптес болсын қонақ ретінде қарсы аламыз. Біз жылы шырайлылықты, мейірімділікті, өнегелілікті білдіре отырып әрқашан көмекке келуге дайынбыз.</p>
+                                </div>
+                                <a href="#" class="content-wrapper-link"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 sm-margin-b-4">
+                            <div class="service bg-color-base wow fadeInDown" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
+                                <div class="service-element">
+                                    <i class="service-icon color-white icon-screen-tablet"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3 class="color-white">Efficient (Тиімділік)</h3>
+                                    <p class="color-white margin-b-5">Біз - біліміміз бен жеке қасиеттеріміздің негізінде сапалы нәтижелерге қол жеткізетін кәсіпқойлармыз. Біз өзіміздің біліктілігімізді дамыта отырып өз уақытымызды тиімді қолданамыз.</p>
+                                </div>
+                                <a href="#" class="content-wrapper-link"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-badge"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>Active (Белсенділік)</h3>
+                                    <p class="margin-b-5">Біз күтімдерді болжай отырып әріптестеріміз бен клиенттеріміздің талаптарына уақытылы жауап береміз. Біз өз қабілетімізді барынша пайдалана отырып жұмыс жасаймыз және әркашан жақсаруға ұмтыламыз.</p>
+                                </div>
+                                <a href="#" class="content-wrapper-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// end row -->
+
+                    <div class="row row-space-2">
+                        <div class="col-sm-4 sm-margin-b-4">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-notebook"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>Reliable (Сенімділік)</h3>
+                                    <p class="margin-b-5">Біздің жұмысымыздың сапасы сенімді және тұрақты. Біз әрқашан берген уәдемізде тұрамыз.</p>
+                                </div>
+                                <a href="#" class="content-wrapper-link"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 sm-margin-b-4">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-speedometer"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>Жылдам Жеткізу (Fast Delivery)</h3>
+                                    <p class="margin-b-5">Бізбен бірге сіз ешқайда кешікпейсіз</p>
+                                </div>
+                                <a href="#" class="content-wrapper-link"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-badge"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>Trustworthy (Сенімге тұрарлық)</h3>
+                                    <p class="margin-b-5">Біз шыншылмыз және ешқашан өз ар-ұятымызға қарсы әрекет жасамаймыз. Клиенттер мен әріптестеріміз бізге сене алады. </p>
+                                </div>
+                                <a href="#" class="content-wrapper-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+        </div>
+        <!-- End Service -->
+
+        <!-- Promo Banner -->
+        <div class="promo-banner">
+            <div class="container-sm content-lg">
+                <h2 class="promo-banner-title">Жаңа бағыт:
+Атырау – Франкфурт</h2>
+                <p class="promo-banner-text">2018 ж. 26 наурызынан бастап Франкфурт қаласына Атыраудан сіз тікелей ұша аласыз.
+
+Тұрмыс деңгейі бойынша әлемде жетінші орын алатын Франкфурт әлемнің ең ірі әр түрлі көрмелері, көрнекті мұражайлары, таң қалдырар бақшалар мен естен кетпес фестивальдерімен көрнекті. "Майн-хэттен" деп жиі аталса да, Франкфурттың асқақтаған көк тіреген үйлері мен Германиядағы ең ірі биржадан басқа ұсынары көп. Дегенмен, біздің сөзімізге сенбей, өзіңіз барып көз жеткізіңіз.</p>
+            </div>
+        </div>
+        <!-- End Promo Banner -->
+
+
+
+        <!-- Pricing -->
+        <div class="work work-popup-trigger">
+        <div id="pricing">
+            <div class="bg-color-sky-light">
+
+                <div class="content-lg container">
+                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                        <h2>Біздің тарифтер</h2>
+                    </div>
+                    <div class="row row-space-2">
+                        <div class="col-sm-4 sm-margin-b-4">
+                            <!-- Pricing -->
+                            <div class="pricing">
+                                <div class="margin-b-30">
+                                    <i class="pricing-icon icon-chemistry"></i>
+                                    <h3>Бастапқы <span> - $</span> 49</h3>
+                                    <p>Бір бағытқа ғана ұшу</p>
+                                </div>
+                                <ul class="list-unstyled pricing-list margin-b-50">
+                                    <li class="pricing-list-item">Эконом класс</li>
+                                    <li class="pricing-list-item">5 продукт</li>
+                                    <li class="pricing-list-item">50 қолданушы панелі</li>
+                                </ul>
+                                 <span class="work-overlay">
+                                <a href="#pricing" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Таңдау</a>
+                                 </span>
+                            </div>
+
+
+
+
+                            <!-- End Pricing -->
+                        </div>
+                        <div class="col-sm-4 sm-margin-b-4">
+                            <!-- Pricing -->
+                            <div class="pricing pricing-active">
+                                <div class="margin-b-30">
+                                    <i class="pricing-icon icon-badge"></i>
+                                    <h3>Кәсіппен <span> - $</span> 149</h3>
+                                    <p>Кәсіпкер адамдарға арналған тариф</p>
+                                </div>
+                                <ul class="list-unstyled pricing-list margin-b-50">
+                                    <li class="pricing-list-item">Эконом класс</li>
+                                    <li class="pricing-list-item">100 продукт</li>
+                                    <li class="pricing-list-item">100 қолданушы панелі</li>
+                                </ul>
+                             <span class="work-overlay">
+                                <a href="#pricing" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Таңдау</a>
+                            </span>
+                            </div>
+                            <!-- End Pricing -->
+                        </div>
+                        <div class="col-sm-4">
+                            <!-- Pricing -->
+                            <div class="pricing">
+                                <div class="margin-b-30">
+                                    <i class="pricing-icon icon-shield"></i>
+                                    <h3>Озат <span> - $</span> 249</h3>
+                                    <p>Қызметтің барлық түрі көрсетіледі</p>
+                                </div>
+                                <ul class="list-unstyled pricing-list margin-b-50">
+                                    <li class="pricing-list-item">Бизнес класс</li>
+                                    <li class="pricing-list-item">Шексіз</li>
+                                    <li class="pricing-list-item">Шексіз</li>
+                                </ul>
+                                 <span class="work-overlay">
+                                <a href="#pricing" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Таңдау</a>
+                            </span>
+                            </div>
+                            <!-- End Pricing -->
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+        </div>
+            <div class="work-popup-overlay">
+                                <div class="work-popup-content">
+                                    <a href="javascript:void(0);" class="work-popup-close">Жабу</a>
+                                    <form id="feedback-form" action="" method="post" class="form-inline text-center"> {% csrf_token %}
+                                            <div class="form-group">
+                                                <label>Аты-жөні: </label>
+                                                <div id="name">{{ form.name }}</div>
+                                                <div class="error-box"></div>
+                                                <label>Email: </label>
+                                                 <div id="email"> {{ form.email }}</div>
+                                                <div class="error-box"></div><br><br>
+                                             <button type="submit" class="btn btn-primary btn-lg btn-block">Тапсырыс беру</button>
+                                             </div>
+                                    </form>
+                            </div>
+        </div>
+            </div>
+        <!-- End Pricing -->
+
+        <!-- Testimonials -->
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>Жолаушы пікірлері</h2>
+
+                    <!-- Swiper Testimonials -->
+                    <div class="swiper-slider swiper-testimonials">
+                        <!-- Swiper Wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <blockquote class="blockquote">
+                                    <div class="margin-b-20">
+                                        Flew Qantas from Canberra to Melbourne. Overall it was an enjoyable flight. It departed and arrived early. The staff were very friendly and helpful and I appreciated the free drinks. The snack (cheese, biscuits and apple) was OK for a brief flight. Also I wish Qantas would not continually change the times of flight bookings. It can be a pain if there is limited time.
+                                    </div>
+                                    <div class="margin-b-20">
+                                         Жалпы бұл өте жағымды рейс. Ерте кетіп, ерте келді.
+                                    </div>
+                                    <p><span class="fweight-700 color-link">Joh Milner</span>, Metronic Customer</p>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <blockquote class="blockquote">
+                                    <div class="margin-b-20">
+                                         I flew QF72 from Singapore to Perth and the flight was extremely full (possibly due to the school holidays). Business class passengers were asked to board first (after families with young children) and this is probably not a good idea as passengers in economy have to file past and queue through the front cabin in this single aisle B737-800. It really is not a suitable aircraft for this very popular international route.
+                                    </div>
+                                    <div class="margin-b-20">
+                                        After all passengers were seated we were offered a pre-departure drink, an amenities kit but no newspapers or cold/hot towels.
+                                    </div>
+                                    <p><span class="fweight-700 color-link">Alex Clarson</span>, Metronic Customer</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <!-- End Swiper Wrapper -->
+
+                        <!-- Pagination -->
+                        <div class="swiper-testimonials-pagination"></div>
+                    </div>
+                    <!-- End Swiper Testimonials -->
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+        <!-- End Testimonials -->
+
+        <!-- Contact -->
+        <div id="contact">
+            <!-- Google Map -->
+            <div class="gmap">
+                <div id="map" class="map height-400"></div>
+                <address class="gmap-address">
+                    <p class="color-heading margin-b-0"> Қызыл аудан, Ауежай - 2, 21542, Алматы, Қазақстан</p>
+                </address>
+            </div>
+            <!-- End Google Map -->
+        </div>
+        <!-- End Contact -->
+        <!--========== END PAGE LAYOUT ==========-->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <!-- Links -->
+
+            <!-- Copyright -->
+            <div class="content container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p class="margin-b-0">© Copyright "Eskhat Airlines". Барлық құқықтар қорғалған.
+
+</p>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+            <!-- End Copyright -->
+        </footer>
+        <!--========== END FOOTER ==========-->
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Жоғары</a>
+
+        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- CORE PLUGINS -->
+        <script src="{% static 'vendor/jquery.min.js'%}" type="text/javascript"></script>
+        <script src="{% static 'vendor/jquery-migrate.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL PLUGINS -->
+        <script src="{% static 'vendor/jquery.easing.js' %}" type="text/javascript"></script>
+        <script src="{% static 'vendor/jquery.back-to-top.js' %}" type="text/javascript"></script>
+        <script src="{% static 'vendor/jquery.smooth-scroll.js' %}" type="text/javascript"></script>
+        <script src="{% static 'vendor/jquery.wow.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'vendor/swiper/js/swiper.jquery.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'vendor/masonry/jquery.masonry.pkgd.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'vendor/masonry/imagesloaded.pkgd.min.js' %}" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U&amp;callback=initMap" async defer></script>
+
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="{% static 'js/layout.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'js/components/wow.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'js/components/swiper.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'js/components/maginific-popup.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'js/components/masonry.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'js/components/gmap.min.js' %}" type="text/javascript"></script>
+
+    </body>
+    <!-- END BODY -->
+</html>
