@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '25$49d77q56^dq@x^v$*kut_2=2^%&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['airline-django.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['air-django.herokuapp.com','127.0.0.1']
 
 
 # Application definition
